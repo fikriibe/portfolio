@@ -1,9 +1,10 @@
-import './globals.css'
+import Image from "next/image";
+import "./globals.scss";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -12,7 +13,15 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <header>
+          <Image src="/logo.svg" width={75} height={75} priority alt="" />
+          <span>tail</span>
+          {/* humburger */}
+          <div />
+        </header>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
