@@ -61,7 +61,17 @@
   --color-pattern-uranian-blue: #B5E2FA
   --color-pattern-moonstone: #0FA3B1
 
-  //TODO: ADDITIONAL COLOR
+  --color-ads-red-bg: #ed5565
+  --color-ads-red: #DA4453
+
+  --color-ads-yellow-bg: #ffce54
+  --color-ads-yellow: #f6bb42
+
+  --color-ads-green-bg: #a0d468
+  --color-ads-green: #8cc152
+
+  --color-ads-blue-bg: #5d9cec
+  --color-ads-blue: #4a89dc
   
 
   --color-content-primary: var(--color-black)
@@ -199,7 +209,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
+// body {
   // color: rgb(var(--foreground-rgb));
   // background: linear-gradient(
   //     to bottom,
@@ -207,7 +217,7 @@ body {
   //     rgb(var(--background-end-rgb))
   //   )
   //   rgb(var(--background-start-rgb));
-}
+// }
 
 a {
   color: inherit;
@@ -215,7 +225,7 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  // html {
     // color-scheme: dark;
-  }
+  // }
 }
