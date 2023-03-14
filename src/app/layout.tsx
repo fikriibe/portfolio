@@ -1,3 +1,9 @@
+import {
+  IcFacebook,
+  IcGithub,
+  IcInstagram,
+  IcLinkedIn,
+} from "@/components/atoms/icons";
 import Image from "next/image";
 import "./globals.scss";
 
@@ -21,6 +27,10 @@ export default function RootLayout({
           <div />
         </header>
         {children}
+        <IcFacebook size={30} fill="red" />
+        <IcInstagram size={30} fill="red" />
+        <IcGithub size={30} fill="red" />
+        <IcLinkedIn size={30} fill="red" />
       </body>
     </html>
   );
