@@ -23,7 +23,7 @@ export default function RootLayout({
         <header>
           <Image src="/logo.svg" width={75} height={75} priority alt="" />
           <span>tail</span>
-          {/* humburger */}
+          <div className="icon open"></div>
           <div />
         </header>
         {children}

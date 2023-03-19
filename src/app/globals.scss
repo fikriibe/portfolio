@@ -74,18 +74,18 @@
   --color-ads-blue: #4a89dc
   
 
-  --color-content-primary: var(--color-black)
-  --color-content-secordary: var(--color-gray-60)
-  --color-content-tetiary: var(--color-gray-50)
+  --color-content-primary: #000
+  --color-content-secordary: #545454
+  --color-content-tetiary: #757575
 
-  --color-bg-primary: var(--color-white)
-  --color-bg-secordary: var(--color-gray-5)
-  --color-bg-tetiary: var(--color-gray-10)
+  --color-bg-primary: #fff
+  --color-bg-secordary: #f6f6f6
+  --color-bg-tetiary: #eee
 
   // TODO
-  --color-border-opeque: var(--color-white)
-  --color-border-hover: var(--color-gray-5)
-  --color-border-selected: var(--color-gray-10)
+  --color-border-opeque: #e2e2e2
+  --color-border-hover: #000
+  --color-border-selected: #FF7F50
 
 
 
@@ -228,4 +228,47 @@ a {
   // html {
     // color-scheme: dark;
   // }
+}
+
+$dark: #212121;
+$light: #efefef;
+$color: #b3e5fc;
+
+.icon {
+  width: 60px;
+  height: 60px;
+  transition-duration: 0.5s;
+  position: relative;
+  
+  &:before{
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: $dark;
+    content: "";
+    top: 10px;
+  }
+  
+  &:after{
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: $dark;
+    content: "";
+    top: 30px;
+  }
+  &.open {
+    transition: 0.5s;
+      &:before{
+        transform: rotateZ(45deg) scaleX(1.25) translate(12px, 7px);
+      }
+      &:after{
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, 0px);
+      }
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
